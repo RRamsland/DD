@@ -101,8 +101,9 @@
 	}
 
 .cardFlip, .cardFront, .cardBack {
-	width: 320px;
-	height: 480px;
+	width: 300px;
+	height: 418px;
+	margin:0 auto;
 }
 
 /* flip speed goes here */
@@ -124,12 +125,16 @@
 
 /* front pane, placed above back */
 .cardFront {
-	z-index: 2;
+
 	/* for firefox 31 */
-	transform: rotateY(0deg);
+	transform: rotateY(180deg);
 }
 
 /* back, initially hidden pane */
 .cardBack {
-	transform: rotateY(180deg);
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+img{
+	width:100%;
 }
